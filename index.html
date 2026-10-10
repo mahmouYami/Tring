@@ -67,24 +67,342 @@
 
             <!-- يمكنك إضافة كروت أسئلة جديدة هنا بحرية تامة، وسيتم ترتيبها تلقائياً -->
 
-            <div class="dash-card hover-cyan card-full card-exam" onclick="startComprehensiveQuiz()" style="display: none;">
-                <div class="card-icon icon-cyan"><i class="fa-solid fa-infinity"></i></div>
-                <div class="card-text"><h3>الاختبار الشامل</h3><p>المعركة الكاملة</p></div>
-            </div>
-        </div>
+            <div class="dash-card hover-cyan card-full card-exam" onclick="startComprehensiveQuiz()" style="display: none;">       <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><span><i class="fa-solid fa-bookmark" style="margin-left: 8px;"></i> المحاضرة الأولى</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div><div class="accordion-content"><p>م<!-- الكارت الأول: نشأة القانون (مفاهيم أساسية - سيان) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid var(--neon-cyan); background: rgba(0, 255, 255, 0.05); padding: 15px; border-radius: 8px;">
+    <h3 style="color: var(--neon-cyan); margin-top: 0; margin-bottom: 10px; font-size: 15px;">نشأة القانون التجاري وطبيعته</h3>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;"><strong>تاريخه ورقمه:</strong> هو قانون حديث نسبياً رقم 17 لسنة 1999. <strong>الوضع قبل صدوره:</strong> كانت المنازعات التجارية تخضع للقانون المدني.</p>
+</div>
 
-        <button class="btn-home" onclick="goHome()"><i class="fa-solid fa-home"></i> العودة للشاشة الرئيسية</button>
+<!-- الكارت الثاني: أسباب النشأة (مفاهيم أساسية - سيان) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid var(--neon-cyan); background: rgba(0, 255, 255, 0.05); padding: 15px; border-radius: 8px;">
+    <h3 style="color: var(--neon-cyan); margin-top: 0; margin-bottom: 10px; font-size: 15px;">أسباب النشأة وضغط الحاجة الملحة</h3>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0; margin-bottom: 8px;">المعاملات المدنية تتطلب بطبيعتها الكتابة للإثبات (شيك، إيصال أمانة، عقد رسمي) للمبالغ التي تزيد عن نصاب معين (ذكرت 5000 جنيه). بينما المعاملات التجارية تحتاج قواعد مغايرة تماماً تقوم على دعامتين هما:</p>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;"><strong>1. السرعة:</strong> سرعة إبرام الصفقات وحركة البضائع بين المحلات والشركات دون تعقيد ورقي.<br><strong>2. الائتمان:</strong> منح مهل وأجل لسداد ثمن البضائع؛ بحيث يحصل التاجر على البضاعة بالأجل، ويبيعها، ويحقق ربحه، ثم يسدد للمورد.</p>
+</div>
+
+<!-- الكارت الثالث: تعريف القانون ونطاقه (مفاهيم أساسية - سيان) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid var(--neon-cyan); background: rgba(0, 255, 255, 0.05); padding: 15px; border-radius: 8px;">
+    <h3 style="color: var(--neon-cyan); margin-top: 0; margin-bottom: 10px; font-size: 15px;">تعريف القانون التجاري ونطاق تطبيقه</h3>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0; margin-bottom: 8px;"><strong>تعريف القانون التجاري:</strong> مجموعة القواعد القانونية الموضوعية التي تنظم طائفة معينة من الأعمال (الأعمال التجارية) وتحكم طائفة معينة من الأشخاص (التجار).</p>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;"><strong>نطاق التطبيق (المادة 1):</strong> يطبق على الأعمال التجارية التي يمارسها أي شخص أياً كانت صفته القانونية، وعلى من اتخذ التجارة مهنة له، ويسري على النزاع حتى لو كان أحد طرفيه فقط تاجراً والطرف الآخر مدنياً (مثل تعاقد صاحب مدرسة أو مستشفى مع مورد لتوريد أغذية).</p>
+</div>
+
+<!-- الكارت الرابع: استقلالية القانون (مفاهيم - سيان) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid var(--neon-cyan); background: rgba(0, 255, 255, 0.05); padding: 15px; border-radius: 8px;">
+    <h3 style="color: var(--neon-cyan); margin-top: 0; margin-bottom: 10px; font-size: 15px;">استقلالية وذاتية القانون التجاري</h3>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;">يتمتع بقضاء نوعي مستقل (المحاكم الاقتصادية)، ويفرض جزاءات وعقوبات تجارية خاصة (الحراسة، الغلق، الحبس) ولا تصل للإعدام. كما يتميز بـ <strong>حرية الإثبات التجاري:</strong> حيث يتيح إثبات الحقوق بكافة الطرق ومنها الفواتير والدفاتر التجارية (دفتر اليومية، دفتر الأستاذ، والدفاتر المساعدة).</p>
+</div>
+
+<!-- الكارت الخامس: علاقة القانون بالقوانين الأخرى (تقسيمات وعلاقات - بنفسجي) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid #b47dff; background: rgba(112, 0, 255, 0.08); padding: 15px; border-radius: 8px;">
+    <h3 style="color: #b47dff; margin-top: 0; margin-bottom: 10px; font-size: 15px;">سابعاً: علاقة القانون التجاري بالقوانين الأخرى</h3>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0; margin-bottom: 8px;"><strong>القانون التجاري الدولي:</strong> نشأ لتنظيم صفقات التجارة والاستيراد والتصدير العابرة للحدود بين متعاملين في دول مختلفة.</p>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0; margin-bottom: 8px;"><strong>قانون الضرائب:</strong> فرض الضرائب على التجار بناءً على الدفاتر التجارية، مثل ضريبة الأرباح التجارية والصناعية، والضريبة على الدخل، وضريبة المبيعات/القيمة المضافة، والضريبة على الخدمات.</p>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;"><strong>قانون العقوبات والجرائم التجارية:</strong> يشمل جرائم تقليد العلامات التجارية (Trade Mark)، وبراءات الاختراع، والاعتداء على الاسم التجاري، وإصدار شيكات دون رصيد، والغش التجاري.</p>
+</div>
+
+<!-- الكارت السادس: تنبيه جوهري (استثناءات وامتحانات - وردي) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid var(--rose-aura); background: rgba(255, 42, 117, 0.08); padding: 15px; border-radius: 8px;">
+    <h3 style="color: var(--rose-aura); margin-top: 0; margin-bottom: 10px; font-size: 15px;"><i class="fa-solid fa-triangle-exclamation"></i> تنبيه هام: شهر الإفلاس</h3>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;"><strong>نظام شهر الإفلاس:</strong> هو نظام مقرر للتجار فقط دون المدنيين؛ وذلك لحماية الدائنين والحجز على أموال التاجر المتعثر ومنعه من السفر أو تهريب أمواله.</p>
+</div>
+
+<!-- الكارت السابع: مصادر القانون (حسب الصورة المرفقة - بنفسجي) -->
+<div class="summary-card" style="margin-bottom: 15px; border-right: 4px solid #b47dff; background: rgba(112, 0, 255, 0.08); padding: 15px; border-radius: 8px;">
+    <h3 style="color: #b47dff; margin-top: 0; margin-bottom: 10px; font-size: 15px;">ثامناً: مصادر القانون التجاري</h3>
+    
+    <h4 style="color: var(--neon-cyan); margin-top: 10px; margin-bottom: 5px; font-size: 14px;">أولاً: المصادر الرسمية أو الإلزامية:</h4>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0; margin-bottom: 8px;">
+        <strong>أ- التشريع:</strong> يعتبر التشريع التجاري الصادر في 17 مايو 1999 هو المصدر الأول للقانون التجاري المصري والذي يتعين على القاضي تطبيق أحكامه على المنازعات التجارية.<br>
+        <strong>ب- العرف والعادات التجارية:</strong> يقوم بسداد وجه النقص في التشريع التجاري حيث له دوراً مكملاً، كما أن له دوراً مفسراً أيضاً لأحكام القانون التجاري.
+    </p>
+
+    <h4 style="color: var(--rose-aura); margin-top: 15px; margin-bottom: 5px; font-size: 14px;">ثانياً: المصادر التفسيرية الاستثنائية:</h4>
+    <p style="color: #cbd5e1; font-size: 13px; line-height: 1.8; margin: 0;">
+        <strong>أ- القضاء:</strong> مجموعة المبادئ التي أقرتها المحاكم في أحكامها، وتعتبر هذه المبادئ من المصادر التفسيرية التي يسترشد بها القاضي عند صدور الأحكام.<br>
+        <strong>ب- الفقه:</strong> يعتبر الفقه وأراء شراح القانون التجاري من المصادر غير الإلزامية للقانون التجاري.
+    </p>
+</div>
+
+<!-- 🟢 بداية الجزء: النظام القانوني وتصنيف الأعمال التجارية 🟢 -->
+
+<!-- كارت 1: النظام القانوني (لون سيان للأسس والقواعد العامة) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-scale-balanced" style="margin-left: 6px;"></i> النظام القانوني للأعمال التجارية
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>يقوم النظام القانوني للأعمال التجارية على 3 عناصر أساسية:</strong></p>
+        <p><strong>1. القضاء الخاص بالأعمال التجارية (المحاكم الاقتصادية):</strong><br>
+        النزاع التجاري تنظره محاكم متخصصة (المحاكم الاقتصادية) وليس المحاكم العادية، لسرعة الفصل في القضايا.</p>
+        <p><strong>2. حرية إثبات الالتزام التجاري:</strong><br>
+        في المعاملات المدنية الأصل هو التقييد والكتابة (الورق)، أما في التجارة فهناك حرية ومرونة لأن طبيعة التجارة قائمة على السرعة والائتمان.</p>
+        <p><strong>3. تقوية جزاء هذا الالتزام (الجزاءات):</strong><br>
+        جزاء مخالفة الالتزام التجاري يختلف عن المدني؛ فمثلاً لا يصل للإعدام أو الأشغال الشاقة، لكنه يشمل جزاءات تجارية قوية مثل: شهر الإفلاس، الغرامات، الحجز، أو السجن في بعض الحالات مثل الشيك بدون رصيد.</p>
     </div>
+</div>
 
-    <!-- 3. صفحة المذكرات (8 محاضرات) -->
-    <div id="view-study" class="page-container">
-        <div class="glass-container">
-            <div class="top-bar">
-                <div class="page-title">مستودع المحاضرات</div>
-                <button class="btn-close" onclick="switchView('view-home')"><i class="fa-solid fa-arrow-left"></i></button>
-            </div>
-            <div class="accordion-wrapper">
-                <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><span><i class="fa-solid fa-bookmark" style="margin-left: 8px;"></i> المحاضرة الأولى</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div><div class="accordion-content"><p>محتوى المحاضرة هنا...</p></div></div>
+<!-- كارت 2: تقسيم الأعمال التجارية (لون بنفسجي للتقسيمات والتصنيفات) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(112, 0, 255, 0.08); border-right: 3px solid #b47dff; padding: 12px; border-radius: 10px;">
+    <h4 style="color: #b47dff; margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-sitemap" style="margin-left: 6px;"></i> تقسيم الأعمال التجارية
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>تنقسم الأعمال التجارية إلى 3 أقسام رئيسية:</strong><br>
+        1. أولاً: الأعمال التجارية بطبيعتها (الأصلية).<br>
+        2. ثانياً: الأعمال التجارية بالتبعية.<br>
+        3. ثالثاً: الأعمال المختلطة (عمل يكون تجارياً لطرف ومدنياً للطرف الآخر).</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p><strong>أولاً: الأعمال التجارية بطبيعتها (الأصلية):</strong><br>
+        تنقسم لدراستين: الأعمال التجارية المنفردة، والأعمال التجارية بطريق المقاولة (الاحتراف).</p>
+    </div>
+</div>
+
+<!-- كارت 3: الأعمال التجارية المنفردة (لون سيان للشروط والتطبيقات) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-user-check" style="margin-left: 6px;"></i> أ) الأعمال التجارية المنفردة
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>تعريف وقاعدة هامة قالتها الدكتورة:</strong><br>
+        هي أعمال لو الشخص عملها مرة واحدة فقط في حياته، يعتبر العمل عملاً تجارياً ويكتسب بسببه صفة التاجر وتطبق عليه أحكام القانون التجاري.</p>
+        <p><strong>وتشمل الآتي:</strong></p>
+        <p><strong>(1) شراء المنقولات أياً كان نوعها بقصد بيعها أو تأجيرها (بذاتها أو بعد تهيئتها في صورة أخرى):</strong><br>
+        ● <strong>الشروط:</strong><br>
+        1. أن يكون هناك شراء (دفع مقابل).<br>
+        2. أن يقع على منقول (وليس عقار).<br>
+        3. أن يكون بنية وقصد إعادة البيع أو التأجير لتحقيق ربح.<br>
+        ● <strong>مثال الدكتورة:</strong> واحد معاه قرشين حلوين، راح اشترى شوية عربيات، وفتح معرض سيارات عشان يبيعهم ويكسب؛ ده عمل تجاري منفرد ويكتسب صفة التاجر.</p>
+    </div>
+</div>
+
+<!-- كارت 4: تنبيه وتفرقة العقار والمنقول (لون وردي لمواضع الامتحانات وتنبيهات الدكتورة) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(255, 42, 117, 0.08); border-right: 3px solid var(--rose-aura); padding: 12px; border-radius: 10px;">
+    <h4 style="color: var(--rose-aura); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-triangle-exclamation" style="margin-left: 6px;"></i> نقطة جوهرية وتنبيه مهم جداً (الفرق بين العقار والمنقول)
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>ركزت الدكتورة على هذه النقطة لكي نفهم الأعمال التي تقع على المنقولات مقارنة بالعقارات:</strong><br>
+        1. <strong>العقار:</strong> كل شيء مستقر وثابت في مكانه ولا يمكن نقله دون تلف (زي المباني، الأراضي، الشجر المثبت في الأرض).<br>
+        2. <strong>المنقول:</strong> كل شيء يمكن نقله من مكان لآخر دون تلف (زي العربيات، البضائع، الأجهزة، السفن، الطائرات).</p>
+        <p><strong>حالتان خاصتان ركزت عليهما الدكتورة:</strong><br>
+        ● <strong>عقار بالتخصيص:</strong> هو في الأصل منقول، لكن تم تخصيصه وتثبيته لخدمة عقار.<br>
+        <em>مثال الدكتورة:</em> الأخشاب أو الديسكات في مدرج المحاضرة؛ كانت ألواح خشب (منقولات) ولكن تم تثبيتها في الأرض والجدران فأصبحت تخدم العقار وثابتة فيه.<br>
+        ● <strong>منقول بحسب المآل:</strong> هو في الأصل عقار، لكن مصيره ونهايته (مآله) أن يتحول لمنقول.<br>
+        <em>مثال الدكتورة:</em> عمارة قديمة تم هدمها ووقعت، فتحولت لأنقاض وردم وحديد وخشب مكسر يباع؛ هنا تحول العقار إلى منقول بحسب المآل.</p>
+    </div>
+</div>
+
+<!-- كارت 5: استكمال الأعمال المنفردة والملاحة (لون سيان وبنفسجي مدمج) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-ship" style="margin-left: 6px;"></i> استكمال الأعمال المنفردة والملاحة التجارية
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>(2) استئجار المنقولات بقصد تأجيرها:</strong><br>
+        الشخص هنا لم يشترِ، بل استأجر منقولاً بنية أن يعيد تأجيره للغير ليكسب من فرق السعر.<br>
+        <em>مثال الدكتورة:</em> شخص استأجر أتوبيسات، أو عربيات، أو سفينة، أو طيارة، بهدف إنه يرجع يأجرها لركاب أو رحلات ويكسب من وراها.</p>
+        <p><strong>(3) تأسيس الشركات التجارية:</strong><br>
+        مجرد قيام الشخص بإجراءات تأسيس وتسجيل شركة تجارية يعتبر عملاً تجارياً من أول لحظة وبمجرد البدء.</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p><strong>ب) الملاحة البحرية والجوية (أعمال تجارية منفردة بنص القانون):</strong><br>
+        نص القانون على أن أي عمل يتعلق بالملاحة التجارية (سواء كانت في البحر أو الجو) يُعد عملاً تجارياً، ومنها:<br>
+        - بناء السفن أو الطائرات، وإصلاحها، وصيانتها.<br>
+        - شراء أو بيع أو تأجير أو استئجار السفن أو الطائرات.<br>
+        - شراء أدوات أو مواد تموين السفن أو الطائرات (المؤن، الوقود، الأغذية الخاصة بالرحلة).<br>
+        - النقل البحري والنقل الجوي.</p>
+    </div>
+</div>
+
+<!-- 🟢 بداية الجزء: الأعمال التجارية بطريق الاحتراف (المفهوم، التوريد، الصناعة) 🟢 -->
+
+<!-- كارت 1: المفهوم والقاعدة الأساسية وشروط الاحتراف (لون سيان للقواعد التأسيسية) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-gears" style="margin-left: 6px;"></i> الأعمال التجارية بطريق الاحتراف (المقاولة)
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>1. المفهوم والقاعدة الأساسية:</strong><br>
+        ● <strong>المفهوم:</strong> هي أعمال لا تعد تجارية ولا تخضع للقانون التجاري إذا زاولها الشخص مرة واحدة أو بصفة عرضية؛ حيث اشترط المشرّع لاعتبارها تجارية أن يزاولها الشخص بطريق الاحتراف.</p>
+        <p>● <strong>شرطا الاحتراف وفق شرح الدكتورة:</strong><br>
+        1. <strong>التكرار والاستمرار:</strong> لا يكفي فعلها مرة واحدة، بل لا بد من تكرارها وممارستها بصورة منتظمة.<br>
+        2. <strong>الاعتماد عليها في كسب العيش:</strong> أن تكون هي مهنته ومصدر رزقه الأساسي، وليست مجرد عمل جانبي أو عارض.</p>
+    </div>
+</div>
+
+<!-- كارت 2: مثال التفرقة للموظف والتاجر (لون وردي للتوضيحات ومواضع التفرقة الهامة) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(255, 42, 117, 0.08); border-right: 3px solid var(--rose-aura); padding: 12px; border-radius: 10px;">
+    <h4 style="color: var(--rose-aura); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-lightbulb" style="margin-left: 6px;"></i> مثال توضيحي ضربته الدكتورة للتفرقة
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>o لو موظف في شركة مسك شنطة وسافر جاب بضاعة من الصين أو تركيا أو أمريكا وباعها لزمايله في الشغل مرة أو كذا مرة على جنب؛ هل يُعتبر تاجراً؟ <strong>لا</strong>، لأن وظيفته الأساسية موظف (شخص مدني) ومرتبه هو دخله الأساسي، وعمله هذا مجرد صفة عرضية وليس احترافاً.<br>
+        o أما لو شخص فرّغ نفسه، وفتح مكتب أو مقر، وشغلته اليومية هي التجارة والبيع والشراء لكسب رزقه؛ هنا يُعتبر محترفاً وتكتسب أعماله الصفة التجارية.</p>
+    </div>
+</div>
+
+<!-- كارت 3: مقاولة التوريد والعقد المختلط (لون بنفسجي للأنواع والتكييف القانوني) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(112, 0, 255, 0.08); border-right: 3px solid #b47dff; padding: 12px; border-radius: 10px;">
+    <h4 style="color: #b47dff; margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-truck-ramp-box" style="margin-left: 6px;"></i> 2. مقاولة التوريد
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>o <strong>التعريف:</strong> التوريد هو عقد يتعهد بمقتضاه شخص بأن يسلّم بضائع معينة بصفة دورية أو منتظمة خلال فترة معينة لشخص آخر نظير مبلغ معين.<br>
+        o <strong>التكييف القانوني:</strong> التعهد بالتوريد يُعد من الأعمال التجارية بطريق المقاولة.<br>
+        o <strong>أمثلة السكرين:</strong> توريد الأغذية للمدارس والمستشفيات.</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p>o <strong>تفصيل مثال الدكتورة من المحاضرة:</strong><br>
+        ▪ صاحب المستشفى (حتى لو كانت مستشفى خاصة وكبيرة) يعتبر شخصاً مدنياً.<br>
+        ▪ لما المستشفى تتعاقد مع مورّد يجيب لهم لحوم، وأسماك، ودواجن، وخضار، وألبان بشكل يومي أو أسبوعي منتظم ومستمر؛ عقد التوريد هنا عمل تجاري بالنسبة للمورّد لأنه يمارسه على سبيل التكرار والاحتراف لكسب عيشه، في حين يظل صاحب المستشفى عملاً مدنياً بالنسبة له (عقد مختلط).</p>
+    </div>
+</div>
+
+<!-- كارت 4: مقاولة الصناعة وسلسلة التصنيع (لون سيان مع إبراز مراحل التحويل) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-industry" style="margin-left: 6px;"></i> 3. مقاولة الصناعة
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>▪ <strong>التعريف:</strong> الصناعة هي تحويل المواد الأولية (الخام) أو نصف المصنوعة إلى سلع تشبع الحاجات الإنسانية.<br>
+        ▪ <strong>صور التحويل:</strong><br>
+        - تحويل المواد الأولية إلى خيوط.<br>
+        - تحويل المواد الأولية والمنتجات نصف المصنعة إلى سلع صالحة لإشباع الحاجات الإنسانية.<br>
+        ▪ <strong>أمثلة السكرين:</strong> صناعة السكر، والنسيج، والحديد، وتكرير البترول.</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p>▪ <strong>شرح ومثال الدكتورة التفصيلي (سلسلة القطن والنسيج):</strong><br>
+        - <em>الفلاح/المزارع:</em> يزرع القطن ويبيعه، وعمله هذا عمل مدني وليس صناعة أو تجارة.<br>
+        - <em>المصنّع:</em> يشتري القطن الخام من الفلاح ويدخله في خط إنتاج ويحوّله إلى خيوط أو نسيج (مادة نصف مصنعة)، ثم مصنع آخر يأخذ هذه الأثواب ويصنع منها ملابس ومفروشات جاهزة للسوق (منتج نهائي).<br>
+        ▪ تحويل المادة الخام الأولية إلى سلعة صالحة للاستخدام الإنساني بهدف كسب الرزق هو جوهر مقاولة الصناعة، وتعتبر عملاً تجارياً بطريق الاحتراف.</p>
+    </div>
+</div>
+
+<!-- 🟢 بداية الجزء: تتمة الأعمال التجارية بطريق الاحتراف (المقاولة) 🟢 -->
+
+<!-- كارت 1: النقل الجوي والبري والبحري (لون سيان للتأصيلات والمواد القانونية) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-plane-departure" style="margin-left: 6px;"></i> مقاولة النقل والتساؤل بشأن النقل الجوي
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>● <strong>التساؤل بشأن النقل الجوي:</strong><br>
+        o يثور تساؤل: هل النقل الجوي يحتاج احترافاً ليكون تجارياً؟<br>
+        o <strong>الإجابة وفقاً للمادة السادسة:</strong> يُعد عملاً تجارياً كل عمل يتعلق بالملاحة التجارية بحرية كانت أو جوية، وعلى وجه الخصوص النقل البحري والنقل الجوي حتى لو وقع العمل مرة واحدة (أي يُعتبر عملاً تجارياً منفرداً بنص القانون).</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p>● <strong>توضيح ومثال الدكتورة:</strong><br>
+        o النقل البري والبحري يُعتبر عملاً تجارياً بالمقاولة والاحتراف لما الشخص يتخذه مهنة مستمرة لكسب عيشه (زي أصحاب خطوط الأتوبيسات أو سيارات الأجرة لنقل الركاب والبضائع).</p>
+    </div>
+</div>
+
+<!-- كارت 2: السمسرة والتعليمات الهامة (لون بنفسجي للوساطة والتكييف القانوني) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(112, 0, 255, 0.08); border-right: 3px solid #b47dff; padding: 12px; border-radius: 10px;">
+    <h4 style="color: #b47dff; margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-handshake-simple" style="margin-left: 6px;"></i> 2. السمسرة
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>● <strong>التعريف:</strong> هي الوساطة في إبرام العقود، ويُطلق نفس اللفظ على المقابل (العمولة) التي يتلقاها المتوسط والذي يسمى سمساراً.<br>
+        ● <strong>مهمة السمسار:</strong><br>
+        o التقريب بين طرفي التعاقد نظير عمولة تكون عادة نسبة مئوية من القيمة المتفق عليها.<br>
+        o يستحق العمولة متى تم إبرام العقد بناءً على وساطته.</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p>o <strong>تأكيد وتعليمات الدكتورة:</strong><br>
+        ▪ السمسار لا يشتري ولا يبيع بنفسه، هو فقط "همزة وصل" يقرّب وجهات النظر بين البائع والمشتري.<br>
+        ▪ السمسرة تُعتبر عملاً تجارياً إذا مارسها الشخص على سبيل الاحتراف، فاتحاً مكتب سمسرة ويعتمد عليها في كسب رزقه.<br>
+        ▪ لو موظف قام بدور السمسار مرة أو توسط في بيع شقة لواحد صاحبه على سبيل الصدفة أو المجاملة، لا نعتبره تاجراً؛ بل يظل شخصاً مدنياً.</p>
+    </div>
+</div>
+
+<!-- كارت 3: أعمال الصرف والبنوك وقاعدة العمل المختلط (لون وردي لمواضع التركيز) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(255, 42, 117, 0.08); border-right: 3px solid var(--rose-aura); padding: 12px; border-radius: 10px;">
+    <h4 style="color: var(--rose-aura); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-building-columns" style="margin-left: 6px;"></i> 3. أعمال الصرف والبنوك
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>▪ <strong>أعمال الصرف:</strong> هو مبادلة عملة دولة بعملة دولة أخرى. قد يكون يدوياً عندما تتم مبادلة العملتين في نفس المكان (زي مكاتب الصرافة)، أو مسحوباً عندما تتم مبادلة العملتين في بلدين مختلفين (التحويلات).</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p>▪ <strong>أعمال البنوك وقاعدة "العمل المختلط":</strong><br>
+        ▪ أعمال البنوك تُعتبر تجارية دائماً بالنسبة للبنك؛ لأن البنك مؤسسة تجارية تهدف للربح وتستثمر أموال المودعين وتمنح القروض بفوائد.<br>
+        ▪ أما بالنسبة للعميل: فلا تكتسب الصفة التجارية إلا إذا توافرت شروط العمل التجاري، بأن يكون العميل تاجراً وقام بالعمل لخدمة تجارته (عمل تجاري بالتبعية).<br>
+        ▪ <em>مثال الدكتورة:</em> لو مواطن عادي أودع فلوسه في البنك، العمل للبنك تجاري وللمواطن مدني، فيكون "عملاً مختلطاً".</p>
+    </div>
+</div>
+
+<!-- كارت 4: أعمال التجارة البحرية وإنشاء المباني (لون سيان) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-trowel-bricks" style="margin-left: 6px;"></i> 4. التجارة البحرية & 5. مقاولة إنشاء المباني
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>.4 أعمال التجارة البحرية (إعادة تأكيد):</strong><br>
+        تُعتبر جميع الأعمال المتعلقة بالتجارة والملاحة البحرية أعمالاً تجارية بطبيعتها، ومنها: بناء السفن أو الطائرات وإصلاحها وصيانتها، شراء أو بيع أو تأجير أو استئجار السفن أو الطائرات، وشراء أدوات أو مواد تموين السفن أو الطائرات.</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p><strong>.5 مقاولة إنشاء المباني:</strong><br>
+        ▪ <strong>القاعدة:</strong> تُعتبر جميع المقاولات المتعلقة بإنشاء مبانٍ ونحوها أعمالاً تجارية متى كان المقاول متعهداً بتوريد المؤن والأدوات اللازمة.<br>
+        ▪ <strong>تنبيه ومثال الدكتورة التفصيلي:</strong><br>
+        ▪ لو شخص يمتلك قطعة أرض ويريد بناء عمارة سكنية، لكنه لا يفهم في البناء؛ فيتعاقد مع مقاول.<br>
+        ▪ المقاول يقوم بجلب المهندسين، والعمال، والحديد، والأسمنت، ومواد البناء، وينفذ المشروع بالكامل.<br>
+        ▪ هذا العمل يُعد عملاً تجارياً للمقاول لأنه يمارسه باحتراف ولتحقيق ربح، بينما يظل عملاً مدنياً بالنسبة لصاحب الأرض.</p>
+    </div>
+</div>
+
+<!-- كارت 5: الوكالة بالعمولة والفرق بينها وبين السمسرة (لون وردي للتمييز الدقيق) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(255, 42, 117, 0.08); border-right: 3px solid var(--rose-aura); padding: 12px; border-radius: 10px;">
+    <h4 style="color: var(--rose-aura); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-user-tie" style="margin-left: 6px;"></i> 6. مقاولة الوكالة بالعمولة
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>▪ <strong>التعريف:</strong> عقد يلتزم بمقتضاه شخص يسمى (الوكيل بالعمولة) بأن يقوم بعمل قانوني باسمه الخاص ولكن لحساب موكله، نظير أجر يسمى بالعمولة.</p>
+        <p>▪ <strong>الفرق بينها وبين السمسرة كما وضحت الدكتورة:</strong><br>
+        ▪ <em>السمسار:</em> يقرّب بين الطرفين فقط ولا يوقع العقد باسمه.<br>
+        ▪ <em>الوكيل بالعمولة:</em> يتعاقد ويوقع العقد باسمه هو شخصياً أمام الغير، ولكن النتيجة المالية والأرباح تذهب لحساب الموكل، ويحصل هو على عمولته المتفق عليها.<br>
+        ▪ <em>مثال الدكتورة:</em> شخص يملك شاليه أو وحدة مصيفية، ويوكل شخصاً (وكيل بالعمولة) ليديرها ويؤجرها للنزلاء؛ فيقوم الوكيل بتوقيع عقود الإيجار باسمه هو أمام النزلاء، ثم يرسل الإيراد للمالك بعد خصم عمولته.</p>
+    </div>
+</div>
+
+<!-- كارت 6: مقاولة المحلات والمكاتب التجارية (لون بنفسجي) -->
+<div class="summary-card" style="margin-bottom: 15px; background: rgba(112, 0, 255, 0.08); border-right: 3px solid #b47dff; padding: 12px; border-radius: 10px;">
+    <h4 style="color: #b47dff; margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-briefcase" style="margin-left: 6px;"></i> 7. مقاولة المحلات والمكاتب التجارية
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p>▪ <strong>القاعدة:</strong> نص المشرّع على تجارية مقاولة المحلات والمكاتب التجارية؛ حيث تُعتبر جميع المكاتب التي تحترف تقديم الخدمات للجمهور نظير أجر مكاتب أعمال وتخضع للقانون التجاري.</p>
+        <p>▪ <strong>الأمثلة المذكورة في السكرين مع شرح الدكتورة:</strong><br>
+        1. <em>مكاتب إدارة أملاك الغير:</em> مكاتب متخصصة تتولى إدارة وتأجير العقارات والمباني ومتابعة صيانتها نيابة عن أصحابها (خصوصاً المغتربين أو المسافرين).<br>
+        2. <em>مكاتب تحصيل الديون للغير:</em> مكاتب تتولى تحصيل المستحقات والديون المتأخرة من المدينين بالنيابة عن الدائنين نظير نسبة أو أجر.<br>
+        3. <em>مكاتب التخليص الجمركي:</em> مكاتب متخصصة تعرف إجراءات الجمارك المعقدة والأوراق المطلوبة لإنهاء الإفراج عن البضائع في الموانئ والمطارات.</p>
+    </div>
+</div>
+
+<!-- كارت 7: مقاولة البيع بالمزاد ومثال قصر التاجر المفلس (لون سيان مع تفصيل كامل) -->
+<div class="summary-card" style="margin-bottom: 15px;">
+    <h4 style="color: var(--neon-cyan); margin-bottom: 10px; font-size: 15px;">
+        <i class="fa-solid fa-gavel" style="margin-left: 6px;"></i> الأعمال التجارية بطريق الاحتراف: مقاولة البيع بالمزاد
+    </h4>
+    <div style="font-size: 13px; line-height: 1.8; color: #cbd5e1;">
+        <p><strong>.1 النص القانوني والقاعدة الأساسية:</strong><br>
+        ● <strong>نص القانون:</strong> نص القانون على تجارية "كل ما يتعلق بمحلات البيع بالمزاد".<br>
+        ● <strong>تعريف هذه المحلات:</strong> هي الأماكن أو الصالات التي يجري فيها بيع المنقولات (سواء كانت بضائع جديدة أو مستعملة) المملوكة للغير بطريق المزاد العلني.<br>
+        ● <strong>المقابل (أجر المحل):</strong> يحصل القائم على المزاد على أجر يكون في العادة نسبة مئوية من ثمن المبيع.<br>
+        ● <strong>آلية ورسو البيع:</strong> يتم البيع نهائياً لمن يدفع أعلى ثمن (أعلى سعر مطروح).</p>
+        <hr style="border: 0; border-top: 1px solid rgba(255,255,255,0.08); margin: 10px 0;">
+        <p><strong>.2 توضيح وشرح الدكتورة التفصيلي من المحاضرة:</strong><br>
+        ● <strong>فكرة عمل صالة المزاد:</strong><br>
+        o صاحب صالة المزاد لا يبيع بضاعته الخاصة، بل يعرض مقتنيات ومنقولات مملوكة لأشخاص آخرين للجمهور، ويفتح المزايدة عليها (زي ما بنشوف في الأفلام: "أونا .. دو .. تري.. بيع").<br>
+        o العمل هنا تجاري بالنسبة لصاحب محل/صالة المزاد لأنه يحترفه، ويوفر المكان والتنظيم، ويكسب رزقه من نسبة العمولة التي يأخذها من كل عملية بيع ناجحة.</p>
+        <p>o <strong>مثال الدكتورة الهام والعملي (قصر التاجر المفلس والمقتنيات):</strong><br>
+        ▪ ضربت الدكتورة مثالاً بتاجر خسر تجارته وتم إشهار إفلاسه؛ القاضي يحجز على أمواله وممتلكاته لسداد ديونه للدائنين.<br>
+        ▪ التاجر يمتلك قصراً كبيراً وبداخله تحف، وأنتيكات، ونجف، ولوحات فنية، وسجاد ثمين.<br>
+        ▪ <strong>يتم التعامل مع الأمر بطريقتين:</strong><br>
+        .1 <em>العقار (مبنى القصر):</em> يُباع كعقار.<br>
+        .2 <em>المنقولات داخل القصر:</em> لأنها قد تكون أثمن من القصر نفسه، تُؤخذ هذه المقتنيات وتُعرض في صالات بيع بالمزاد العلني.<br>
+        ● تُعرض هذه التحف قطعة قطعة، ويحضر الناس المزاد، وترسو كل قطعة على من يقدم أعلى سعر؛ ومن هذا المزاد يتم تحقيق أعلى عائد ممكن لسداد أموال الدائنين، وتحصل صالة المزاد على عمولتها المتفق عليها كعمل تجاري محترف.</p>
+    </div>
+</div>
+
+<!-- ⬇️ انسخ الجزء القادم هنا ⬇️ -->
+
+
+
+</div></div>
                 <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><span><i class="fa-solid fa-bookmark" style="margin-left: 8px;"></i> المحاضرة الثانية</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div><div class="accordion-content"><p>محتوى المحاضرة هنا...</p></div></div>
                 <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><span><i class="fa-solid fa-bookmark" style="margin-left: 8px;"></i> المحاضرة الثالثة</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div><div class="accordion-content"><p>محتوى المحاضرة هنا...</p></div></div>
                 <div class="accordion-item"><div class="accordion-header" onclick="toggleAccordion(this)"><span><i class="fa-solid fa-bookmark" style="margin-left: 8px;"></i> المحاضرة الرابعة</span><i class="fa-solid fa-chevron-down accordion-icon"></i></div><div class="accordion-content"><p>محتوى المحاضرة هنا...</p></div></div>
